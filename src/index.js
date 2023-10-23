@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App -v2";
-import StarRating from "./StarRating";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +12,5 @@ root.render(
       messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
       defaultRating={0}
     /> */}
-    {/* <Expandercomponent /> */}
   </React.StrictMode>
 );

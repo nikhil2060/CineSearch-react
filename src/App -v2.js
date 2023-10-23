@@ -190,18 +190,18 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 
   useKey("Escape", onCloseMovie);
 
-  useEffect(
-    function () {
-      function callBack(e) {
-        if (e.code === "Escape") onCloseMovie();
-      }
-      document.addEventListener("keydown", callBack);
-      return function () {
-        document.removeEventListener("keydown", callBack);
-      };
-    },
-    [onCloseMovie]
-  );
+  // useEffect(
+  //   function () {
+  //     function callBack(e) {
+  //       if (e.code === "Escape") onCloseMovie();
+  //     }
+  //     document.addEventListener("keydown", callBack);
+  //     return function () {
+  //       document.removeEventListener("keydown", callBack);
+  //     };
+  //   },
+  //   [onCloseMovie]
+  // );
 
   const watchedUserRating = watched.find(
     (movie) => movie.imdbID === selectedId
